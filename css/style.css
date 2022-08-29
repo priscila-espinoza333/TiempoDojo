@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: lightblue;
+}
+
+nav{
+    width: 1000px;
+    margin: 0 auto; /* aqui me pone margen derecho e izquierdo automatico*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    
+}
+
+h1, nav a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.sanjose {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+    align-items: center;
+}
+
+.container-week {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5%; /* aqui doy espacio entre caja y caja*/
+    border-radius: 1px solid black;
+
+}
+
+.day {
+    flex: 1;
+    background: lightgray;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.day img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 20px 0;
+
+}
+
+.temperatures {
+    display: flex;
+    justify-content: space-around ;
+    margin-top: 20px;
+}
+
+.maxTemp {
+    color: red;
+}
+
+.minTemp {
+    color: blue;
+}
+
+.cookie {
+    background-color: lightgray;
+    width: 1000px;
+    margin: 0 auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+title {
+    width: 50%;
+    color: black;
+}
+
+

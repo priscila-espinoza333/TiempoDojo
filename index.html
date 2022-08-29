@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiempoDojo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <header>   
+            <nav>
+                <h1>DojoWeather</h1>
+                <ul>
+                    <li><a href="#" onclick="displayAlert(this)">Burbank</a> </li>
+                    <li><a href="#" onclick="displayAlert(this)">Chicago</a> </li>
+                    <li><a href="#" onclick="displayAlert(this)">Dallas</a> </li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <div class="sanjose">
+                <h2>San José</h2>
+                <form>
+                    <label> mostrar temperatura en:</label>
+                    <select onchange="changeTemperature(this)">
+                        <option value="C"> C</option>
+                        <option value="F"> F</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="container-week">
+                <div class="day">
+                    <h1>Today</h1>
+                    <img src="images/some_rain.png" alt="imagen lluvia">
+                    <h4>some rain</h4>
+                    <div class="temperatures">
+                        <span id="temp1" class="maxTemp"> 24</span> 
+                        <span id="temp2" class="minTemp"> 18</span>
+                    </div>
+                </div>    
+
+                <div class="day">
+                    <h1>Tomorrow</h1>
+                    <img src="images/some_sun.png" alt="imagen sol">
+                    <h4>some sun</h4>
+                    <div class="temperatures">
+                        <span id="temp3" class="maxTemp"> 27</span> 
+                        <span id="temp4" class="minTemp"> 19</span>
+                    </div>
+                </div>
+                
+                <div class="day">
+                    <h1>Friday</h1>
+                    <img src="images/some_clouds.png" alt="imagen nubes">
+                    <h4>some rain</h4>
+                    <div class="temperatures">
+                        <span id="temp5" class="maxTemp"> 21</span> 
+                        <span id="temp6" class="minTemp"> 16</span>
+                    </div>
+                </div>
+                <div class="day">
+                    <h1>Saturday</h1>
+                    <img src="images/some_sun.png" alt="imagen sun">
+                    <h4>some rain</h4>
+                    <div class="temperatures">
+                        <span id="temp7" class="maxTemp"> 26</span> 
+                        <span id="temp8" class="minTemp"> 21</span>
+                    </div>
+                </div> 
+            </div> <!--fin container week-->
+
+        </main> <!--fin container principal-->
+        <footer>
+        <div class="cookie"> 
+                <img src="images/cookie.png" alt="imagen cookies">
+                
+                <h1 class="title">Stop! Cokie time</h1>
+                <p> we use cookies(sadly not the edible ones) to personalize
+                    content and ads, to provide social media features and to analyse our traffic Read more
+                </p>  
+                <button onclick="dismissCookie"> Acepto </button> 
+        </div> 
+        
+        </footer>
+
+
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
